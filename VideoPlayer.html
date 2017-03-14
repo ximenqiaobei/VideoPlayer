@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>web 视频播放器</title>
+        <script src='beiku.js'></script>
+        <link rel="stylesheet" href="video.css">
+
+    </head>
+    <body>
+        <div class="player">
+            <!-- autoplay="" 自动播放-->
+            <!-- controls 原生控件 -->
+            <!-- loop 单曲循环 -->
+            <video class="video" controls autoplay>
+                <source class="song" src="0.mp4">
+            </video>
+             <!-- 上一个，下一个，播放/暂停 图标 -->
+             <!-- 控件底图 -->
+            <div class="widget">
+                 <img class="widget_img" src="images/widget0.png">
+            </div>
+            <div class="buttons">
+                <img class="button_last" src='images/video_play1.png'>
+                <img class="button_play" src='images/video_play.png'>
+                <img class="button_next" src='images/video_play2.png'>
+            </div>
+            <!-- 视频时间 以及视频滑条-->
+            <div class="time">
+                <span class="current_time">00:00</span>
+                <input class="time_input" type="range" value="100">
+                <img class="time_dot" src="images/video_bar0.png">
+                <div class="input_fill">
+                    <img class="time_input_fill" src="images/video_bar1.png">
+                </div>
+                <img class="time_input_kerve" src="images/video_bar2.png">
+                <span class="duration_time">00:00</span>
+            </div>
+            <!-- 视频音量 -->
+            <div class="volume">
+                <img class='volume_img' src="images/video_vol.png">
+                <input class="input_volume" type="range" value="100">
+                <img class="video_vol0" src="images/video_vol0.png">
+                <img class="video_volbar" src="images/video_volbar.png">
+            </div>
+            <!-- 全屏图标 -->
+            <div class="screen">
+                <img class="fullscreen_img" src="images/video_switch.png">
+            </div>
+            <!-- 视频列表 -->
+            <div class="videoList">
+                <ul class='videoList_ul none'>
+                    <span class="playList">播放列表</span>
+                </ul>
+                <img class="videoList_img" src="images/video_setup.png">
+            </div>
+
+        </div>
+        <script src='VideoPlayer.js'></script>
+    </body>
+</html>

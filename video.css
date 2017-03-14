@@ -1,0 +1,268 @@
+body{
+    /*页面背景色 灰色*/
+    /*background: gray;*/
+}
+
+
+/* 隐藏 video 原生控件 */
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+
+
+/* video 元素 */
+.video{
+    /*设置视频宽高*/
+    width: 640px;
+    height: 360px;
+}
+
+/*控件底图的父元素 div*/
+.widget{
+    position: absolute;
+    overflow: hidden;
+    top: 340px;
+    height: 28px;
+    width: 640px;
+    opacity: 0.6;
+}
+
+/*  控件底图  */
+.widget_img{
+    position: absolute;
+}
+
+/* 上、下、播放  三个图标的父元素  */
+.buttons {
+    position: relative;
+    overflow: hidden;
+    height: 37px;
+    width: 85px;
+    top: -41px;
+    left: -15px;
+}
+
+/*  上一个  */
+.button_last{
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+}
+
+/* 播放/暂停  */
+.button_play{
+    display: inline-block;
+    position: absolute;
+    right: 14px;
+    top: 3px;
+}
+
+/* 下一个 */
+.button_next{
+    display: inline-block;
+    position: absolute;
+    right: -12px;
+    top: 1px;
+}
+
+
+/* */
+.time{
+    position: relative;
+    overflow: hidden;
+    height: 25px;
+    width: 442px;
+    left: 68px;
+    top: -63px;
+}
+
+/*  视频进度时长 */
+.current_time{
+    position: absolute;
+    color: wheat;
+    font-size: 1px;
+    left: 10px;
+}
+
+/* 视频 inpot 进度条  */
+.time_input{
+    display: inline-block;
+    position: absolute;
+    left: 46px;
+    width: 341px;
+    top:-3px;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* 视频进度条的 圆点  */
+.time_dot{
+    position: absolute;
+    left: 32px;
+    top: -2px;
+    z-index: 1;
+}
+
+/*  填充条的 父元素div  */
+.input_fill{
+    position: absolute;
+    left: 42px;
+    /* overflow 子元素溢出  hidden不显示*/
+    overflow: hidden;
+    height: 16px;
+    width: 0px;
+    z-index: 0;
+}
+
+/*  填充条   */
+.time_input_fill{
+    position: absolute;
+    /* 总长度 334px  */
+}
+
+/*   底条  */
+.time_input_kerve{
+    position: absolute;
+    left: 41px;
+}
+
+
+/* 视频总时长 */
+.duration_time{
+    position: absolute;
+    left: 398px;
+    color: wheat;
+    font-size: 1px;
+    left: 396px;
+    top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 用于切换 video 列表 */
+.none{
+    display: none;
+}
+
+
+/*静音图标 、音量滑条及圆点、透明的 input  的父元素 */
+.volume{
+    position: relative;
+    overflow: hidden;
+    height: 54px;
+    width: 116px;
+    left: 482px;
+    top: -109px;
+}
+
+/* 静音图标  */
+.volume_img{
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+
+
+/* 透明的 input  用于音量滑条图标 */
+.input_volume {
+    position: absolute;
+    width: 62px;
+    left: 38px;
+    top: 18px;
+    /*不透明度   关键 0 */
+    opacity: 0;
+    /* 关键 1 */
+    z-index: 1;
+}
+
+
+/* 音量滑条图标的圆点  */
+.video_vol0{
+    position: absolute;
+    left: 30px;
+    top: 15px;
+     /*margin-left: 60px; 最大值*/
+}
+
+/* 音量槽  */
+.video_volbar{
+}
+
+
+/* 全屏图标的父元素 div */
+.screen{
+    position: relative;
+    overflow: hidden;
+    height: 37px;
+    width: 28px;
+    left: 581px;
+    top: -157px;
+    z-index: 1;
+}
+
+/* 全屏图标  */
+.fullscreen_img{
+    position: absolute;
+}
+
+.videoList{
+    position: relative;
+    overflow: hidden;
+    height: 358px;
+    width: 107px;
+    top: -517px;
+    left: 533px;
+}
+
+
+.videoList_ul{
+    position: absolute;
+    height: 334px;
+    width: 99px;
+    left: -32px;
+    background: dimgray;
+    opacity: 0.8;
+    top: -18px;
+}
+
+.videoList_img{
+    position: absolute;
+    top: 326px;
+    left: 73px;
+}
+
+.item{
+    list-style-type: none;
+    color: white;
+    position: relative;
+    top: 13px;
+    left: 30px;
+    margin-bottom: 11px;
+    cursor: context-menu;
+}
+
+.item:hover{
+    background: deepskyblue;
+}
+
+
+.playList{
+    font-size: 17px;
+    position: relative;
+    left: -8px;
+    background: deepskyblue;
+    display: block;
+    overflow: hidden;
+    height: 28px;
+    top: 3px;
+    width: 107px;
+    color: white
+}
