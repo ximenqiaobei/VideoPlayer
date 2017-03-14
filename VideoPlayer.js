@@ -519,21 +519,17 @@ const bindEventAll = function(){
     bindDurationTime()
     bindKeyDown()
     bindVideoClick()
-
     bindVolumeChange()
     bindVolumeImg()
-
     bindFullScreen()
     bindFullScreenKeyup()
-
     bindVideoListImg()
-
     bindToggleMovie()
-
     bindSetVolumeImg()
     bindSetTimeInput()
 }
 
+// 程序主入口
 const _mian_ = function(){
     bindEventAll()
     //获得播放列表函数 并添加至页面
