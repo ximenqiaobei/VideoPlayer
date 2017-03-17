@@ -48,6 +48,7 @@ video::-webkit-media-controls-enclosure {
     display: inline-block;
     position: absolute;
     left: 10px;
+    cursor: pointer;
 }
 
 /* 播放/暂停  */
@@ -56,6 +57,8 @@ video::-webkit-media-controls-enclosure {
     position: absolute;
     right: 14px;
     top: 3px;
+    /* 鼠标指针样式改变 */
+    cursor: pointer;
 }
 
 /* 下一个 */
@@ -64,10 +67,11 @@ video::-webkit-media-controls-enclosure {
     position: absolute;
     right: -12px;
     top: 1px;
+    cursor: pointer;
 }
 
 
-/* */
+/*视频时间 以及视频滑条 的父元素*/
 .time{
     position: relative;
     overflow: hidden;
@@ -94,6 +98,7 @@ video::-webkit-media-controls-enclosure {
     top:-3px;
     opacity: 0;
     z-index: 2;
+    cursor: pointer;
 }
 
 /* 视频进度条的 圆点  */
@@ -102,6 +107,7 @@ video::-webkit-media-controls-enclosure {
     left: 32px;
     top: -2px;
     z-index: 1;
+
 }
 
 /*  填充条的 父元素div  */
@@ -168,6 +174,7 @@ video::-webkit-media-controls-enclosure {
     position: relative;
     top: 2px;
     left: 10px;
+    cursor: pointer;
 }
 
 
@@ -181,6 +188,7 @@ video::-webkit-media-controls-enclosure {
     opacity: 0;
     /* 关键 1 */
     z-index: 1;
+    cursor: pointer;
 }
 
 
@@ -211,8 +219,10 @@ video::-webkit-media-controls-enclosure {
 /* 全屏图标  */
 .fullscreen_img{
     position: absolute;
+    cursor: pointer;
 }
 
+/* 视频列表的 父元素div */
 .videoList{
     position: relative;
     overflow: hidden;
@@ -222,7 +232,7 @@ video::-webkit-media-controls-enclosure {
     left: 533px;
 }
 
-
+/* 视频列表 */
 .videoList_ul{
     position: absolute;
     height: 334px;
@@ -233,12 +243,15 @@ video::-webkit-media-controls-enclosure {
     top: -18px;
 }
 
+/* 点击展开列表的图标  */
 .videoList_img{
     position: absolute;
     top: 326px;
     left: 73px;
+    cursor: pointer;
 }
 
+/*列表项的 class  */
 .item{
     list-style-type: none;
     color: white;
@@ -247,6 +260,8 @@ video::-webkit-media-controls-enclosure {
     left: 30px;
     margin-bottom: 11px;
     cursor: context-menu;
+    cursor: pointer;
+
 }
 
 .item:hover{
@@ -254,6 +269,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 
+/* 列表项的 <span> */
 .playList{
     font-size: 17px;
     position: relative;
@@ -265,4 +281,9 @@ video::-webkit-media-controls-enclosure {
     top: 3px;
     width: 107px;
     color: white
+}
+
+.playList:hover{
+    cursor: no-drop;
+    /*cursor: context-menu;*/
 }
